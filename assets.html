@@ -1,0 +1,144 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/assets.html b/assets.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..3f4b859c505cf0ad68992f217a32d8a254ed27f6
+--- /dev/null
++++ b/assets.html
+@@ -0,0 +1,134 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++
++  <title>Assets | Credosity</title>
++  <meta name="description" content="Credosity assets: checklists, logs, and copy-paste templates to keep your credit rebuild calm and organized." />
++
++  <link rel="stylesheet" href="css/style.css" />
++</head>
++<body>
++
++  <header class="hero">
++    <p class="kicker">Credosity</p>
++    <h1>Assets and templates</h1>
++    <p class="tagline">
++      Checklists, logs, and copy-paste scripts to keep your credit rebuild calm.
++      No fluff. No hype. Just tools you can use.
++    </p>
++
++    <div class="hero-actions">
++      <a href="/index.html" class="button">Home</a>
++      <a href="/start-here.html" class="button primary">Start Here</a>
++    </div>
++  </header>
++
++  <main>
++
++    <section class="section">
++      <h2>What this page is</h2>
++      <p>
++        Quick, practical assets to reduce friction: checklists so you don’t miss steps, logs so you can track
++        what happened, and scripts so you don’t have to write everything from scratch. Everything stays plain language.
++      </p>
++    </section>
++
++    <section class="section">
++      <h2>Ready-to-use assets</h2>
++      <div class="cards">
++        <div class="card">
++          <h3>Credit report pull checklist</h3>
++          <p>
++            A short list for pulling your reports calmly: where to go, what to grab, and what to note when you’re done.
++          </p>
++          <p class="muted">Download link coming soon. For now, copy the steps and paste into your notes.</p>
++        </div>
++
++        <div class="card">
++          <h3>Dispute log template</h3>
++          <p>
++            Columns for dates, bureaus, account numbers, amounts, status, and responses. Helps you stay organized
++            if you send disputes or corrections.
++          </p>
++          <p class="muted">Use in any spreadsheet tool. We’ll add a direct file link next.</p>
++        </div>
++
++        <div class="card">
++          <h3>Utilization snapshot</h3>
++          <p>
++            A simple table to list each card, its limit, current balance, and utilization. Shows where to focus first.
++          </p>
++          <p class="muted">Copy the layout and fill it in; a downloadable version is on the way.</p>
++        </div>
++      </div>
++    </section>
++
++    <section class="section">
++      <h2>Copy/paste scripts you can use now</h2>
++      <div class="cards">
++        <div class="card">
++          <h3>Freeze-the-bleed reminder</h3>
++          <p>
++            “I’m setting autopay to minimums while I stabilize. No new applications until utilization is under control.”
++          </p>
++          <p class="muted">Paste into your notes or budgeting app as a calm guardrail.</p>
++        </div>
++
++        <div class="card">
++          <h3>Denial reflection note</h3>
++          <p>
++            “I was denied because of <em>[reason code]</em>. My next 30-day focus is <em>[one action]</em>. No rapid-fire applications.”
++          </p>
++          <p class="muted">Helps prevent emotional re-applications.</p>
++        </div>
++
++        <div class="card">
++          <h3>Dispute evidence checklist</h3>
++          <p>
++            “For each item: statement screenshot, dates, correspondence copy, bureau submitted to, response date.”
++          </p>
++          <p class="muted">Drop into your log before sending anything.</p>
++        </div>
++      </div>
++    </section>
++
++    <section class="section callout">
++      <h2>How to use these</h2>
++      <ul class="bullets">
++        <li>Keep it simple. One asset at a time beats ten half-finished ones.</li>
++        <li>Write dates everywhere. Memory is unreliable; logs are calm.</li>
++        <li>Set a weekly check-in. Ten quiet minutes to update balances and statuses.</li>
++        <li>Watch for risk. If a tool feels pushy or costly, pause and rethink.</li>
++      </ul>
++    </section>
++
++    <section class="section">
++      <h2>What’s next</h2>
++      <p>
++        We’re adding direct download links (PDF + spreadsheet) and more checklists based on what you ask for most.
++        If there’s an asset you want, we’ll prioritize it.
++      </p>
++      <div class="center">
++        <a href="/start-here.html" class="button primary">Go to Start Here</a>
++      </div>
++    </section>
++
++  </main>
++
++  <footer class="footer">
++    <nav class="footer-links">
++      <a href="/index.html">Home</a>
++      <a href="/start-here.html">Start Here</a>
++      <a href="/assets.html">Assets</a>
++      <a href="/about.html">About</a>
++      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
++      <a href="/privacy.html">Privacy</a>
++    </nav>
++    <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
++  </footer>
++
++  <script src="js/main.js"></script>
++</body>
++</html>
+ 
+EOF
+)
