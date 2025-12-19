@@ -1,76 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Affiliate Disclosure | Credosity</title>
-  <meta name="description" content="Affiliate disclosure for Credosity. Clear, plain-language explanation of how this site makes money." />
-
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-  <header class="hero">
-    <p class="kicker">Credosity</p>
-    <h1>Affiliate Disclosure</h1>
-    <p class="tagline">
-      Simple truth: some links may pay us. That does not buy our voice.
-    </p>
-
-    <div class="hero-actions">
-      <a href="/index.html" class="button">Home</a>
-      <a href="/start-here.html" class="button primary">Start Here</a>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="section">
-      <h2>What this means</h2>
-      <p>
-        Credosity may earn a commission when you click certain links and take an action (like signing up for a service).
-        This is called affiliate compensation.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>What it does not mean</h2>
-      <ul class="bullets">
-        <li>It does not mean we recommend something we don’t believe helps.</li>
-        <li>It does not mean you’ll get better results because you used our link.</li>
-        <li>It does not mean every product is right for every person.</li>
-      </ul>
-    </section>
-
-    <section class="section callout">
-      <h2>Our standard</h2>
-      <p>
-        <strong>No fake promises.</strong> If a product is risky, we say it’s risky.
-        If it’s not a fit for your situation, we say that too.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Questions</h2>
-      <p class="muted">
-        If you have questions about this disclosure, we’ll add a contact page soon.
-      </p>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <nav class="footer-links">
-      <a href="/index.html">Home</a>
-      <a href="/start-here.html">Start Here</a>
-      <a href="/about.html">About</a>
-      <a href="/privacy.html">Privacy</a>
-    </nav>
-    <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
-
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/affiliate-disclosure.html b/affiliate-disclosure.html
+index 9114af3be0a09be79bac74da1d02f56e897678ce..b2f752f62c6bd71b120c726152f1ad664e06949e 100644
+--- a/affiliate-disclosure.html
++++ b/affiliate-disclosure.html
+@@ -42,35 +42,35 @@
+         <li>It does not mean every product is right for every person.</li>
+       </ul>
+     </section>
+ 
+     <section class="section callout">
+       <h2>Our standard</h2>
+       <p>
+         <strong>No fake promises.</strong> If a product is risky, we say it’s risky.
+         If it’s not a fit for your situation, we say that too.
+       </p>
+     </section>
+ 
+     <section class="section">
+       <h2>Questions</h2>
+       <p class="muted">
+         If you have questions about this disclosure, we’ll add a contact page soon.
+       </p>
+     </section>
+ 
+   </main>
+ 
+   <footer class="footer">
+     <nav class="footer-links">
+       <a href="/index.html">Home</a>
+       <a href="/start-here.html">Start Here</a>
++      <a href="/assets.html">Assets</a>
+       <a href="/about.html">About</a>
+       <a href="/privacy.html">Privacy</a>
+     </nav>
+     <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
+   </footer>
+ 
+   <script src="js/main.js"></script>
+ </body>
+ </html>
+-
+ 
+EOF
+)
