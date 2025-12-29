@@ -1,46 +1,156 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/Start-here.html b/Start-here.html
-index 13857e6579de79969f2b0d69c83448dbe8bb28eb..88ebe94ee8b2f1a63c23d38999545de344a53068 100644
---- a/Start-here.html
-+++ b/Start-here.html
-@@ -133,36 +133,36 @@
-         <li>Errors happen. Especially after moves, breakups, medical events, or identity issues.</li>
-         <li>Document everything. Dates, balances, letters, screenshots.</li>
-         <li>Dispute carefully. Not emotional. Specific.</li>
-       </ul>
-       <p class="muted">
-         We’ll build a dispute checklist page next.
-       </p>
-     </section>
- 
-     <section class="section">
-       <h2>How Credosity makes money</h2>
-       <p>
-         Some links may earn a commission. That never changes what we recommend.
-         Our hard line stands: <strong>no fake promises</strong>.
-       </p>
-       <p class="muted">
-         Read the full <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>.
-       </p>
-     </section>
- 
-   </main>
- 
-   <footer class="footer">
-     <nav class="footer-links">
-       <a href="/index.html">Home</a>
-+      <a href="/assets.html">Assets</a>
-       <a href="/about.html">About</a>
-       <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-       <a href="/privacy.html">Privacy</a>
-     </nav>
-     <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
-   </footer>
- 
-   <script src="js/main.js"></script>
- </body>
-       </html>
--
- 
-EOF
-)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Start Here | Credosity</title>
+  <meta name="description" content="Start here if life hit your finances. Clear steps, real options, no fake promises." />
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <p class="kicker">Credosity</p>
+    <h1>Start here</h1>
+    <p class="tagline">
+      If life hit your finances, you’re not alone. This is a calm map.
+      No hype. No shame. No fake promises.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/" class="button">Home</a>
+      <a href="#steps" class="button primary">Show me the steps</a>
+    </div>
+
+    <p class="hardline">
+      Hard line: <strong>No fake promises.</strong>
+    </p>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <h2>What “life hit” usually looks like</h2>
+      <p>
+        Job loss. Medical bills. A divorce. Housing disruption. Caregiving. A month that became a year.
+        None of that makes you irresponsible. It makes you human. Credit just records the impact like a
+        blunt instrument.
+      </p>
+    </section>
+
+    <section id="steps" class="section">
+      <h2>Your next steps (simple, repeatable)</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Step 1: Get the facts</h3>
+          <p>
+            Before you “fix” anything, know what’s actually on your reports. Not vibes, not fear, not guesses.
+          </p>
+          <p class="muted">
+            Goal: identify late payments, collections, utilization, and errors.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Step 2: Stop the bleeding</h3>
+          <p>
+            Missed payments and high utilization do the most damage, fastest. Stabilize the basics first.
+          </p>
+          <p class="muted">
+            Goal: autopay minimums where possible, reduce utilization, avoid new hard pulls unless necessary.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Step 3: Build forward</h3>
+          <p>
+            You rebuild credit by stacking boring wins: on-time history, controlled usage, and time.
+          </p>
+          <p class="muted">
+            Goal: a plan you can keep for 90 days without white-knuckling it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Pick your lane</h2>
+      <p class="muted">Choose the path closest to your situation. You can switch later.</p>
+
+      <div class="cards">
+        <a class="card" href="/denied-next-3-moves.html">
+          <h3>I got denied</h3>
+          <p>Denied for a card or loan and you’re not sure why.</p>
+          <span class="card-cta">Open →</span>
+        </a>
+
+        <a class="card" href="#lane-rebuild">
+          <h3>I need to rebuild</h3>
+          <p>You’re ready to start clean and rebuild without getting trapped.</p>
+          <span class="card-cta">Open →</span>
+        </a>
+
+        <a class="card" href="#lane-errors">
+          <h3>I think my report is wrong</h3>
+          <p>Potential errors, old collections, or messy reporting after a life event.</p>
+          <span class="card-cta">Open →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="lane-rebuild" class="section callout">
+      <h2>If you’re rebuilding</h2>
+      <ul class="bullets">
+        <li>Prioritize on-time payment history. It’s the spine.</li>
+        <li>Keep utilization controlled (low is calm).</li>
+        <li>Choose tools that help you build, not traps that profit from your stress.</li>
+      </ul>
+      <p>
+        This site will recommend tools over time. If a tool is risky, we’ll say it. If it doesn’t fit your situation,
+        we’ll say that too.
+      </p>
+    </section>
+
+    <section id="lane-errors" class="section callout">
+      <h2>If your credit report looks wrong</h2>
+      <ul class="bullets">
+        <li>Errors happen. Especially after moves, breakups, medical events, or identity issues.</li>
+        <li>Document everything. Dates, balances, letters, screenshots.</li>
+        <li>Dispute carefully. Not emotional. Specific.</li>
+      </ul>
+      <p class="muted">
+        We’ll build a dispute checklist page next.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>How Credosity makes money</h2>
+      <p>
+        Some links may earn a commission. That never changes what we recommend.
+        Our hard line stands: <strong>no fake promises</strong>.
+      </p>
+      <p class="muted">
+        Read the full <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="/">Home</a>
+      <a href="/start-here.html">Start Here</a>
+      <a href="/about.html">About</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+
