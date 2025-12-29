@@ -205,3 +205,30 @@ footer {
   color: #e6e6eb;
   }
   
+/* Standout section styling for scanners */
+.section-lede{
+  padding-top: 0.5rem;
+}
+
+.section-title-standout{
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #2a2a33;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.lede{
+  font-size: 1.15rem;
+  color: #e6e6eb;
+  max-width: 70ch;
+}
+
+.section-lede .button{
+  margin-top: 0.8rem;
+}
