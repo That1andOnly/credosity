@@ -1,110 +1,117 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/about.html b/about.html
-new file mode 100644
-index 0000000000000000000000000000000000000000..f032df4891c404afdf84e060b7e7533e85637573
---- /dev/null
-+++ b/about.html
-@@ -0,0 +1,100 @@
-+<!DOCTYPE html>
-+<html lang="en">
-+<head>
-+  <meta charset="UTF-8" />
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+
-+  <title>About | Credosity</title>
-+  <meta name="description" content="About Credosity. Why we exist, what we stand for, and how we keep our guidance honest." />
-+
-+  <link rel="stylesheet" href="css/style.css" />
-+</head>
-+<body>
-+
-+  <header class="hero">
-+    <p class="kicker">Credosity</p>
-+    <h1>About Credosity</h1>
-+    <p class="tagline">
-+      Built for people rebuilding after life happens. No shame. No hype. No fake promises.
-+    </p>
-+
-+    <div class="hero-actions">
-+      <a href="/index.html" class="button">Home</a>
-+      <a href="/start-here.html" class="button primary">Start Here</a>
-+    </div>
-+  </header>
-+
-+  <main>
-+
-+    <section class="section">
-+      <h2>Why this exists</h2>
-+      <p>
-+        Credit advice is often loud, salesy, or shame-based. Credosity is the opposite:
-+        calm, direct guidance for people getting back on their feet after job loss, medical bills,
-+        divorce, or any messy chapter that shook their finances.
-+      </p>
-+    </section>
-+
-+    <section class="section">
-+      <h2>What you’ll get here</h2>
-+      <ul class="bullets">
-+        <li>Plain-language explanations of how credit works.</li>
-+        <li>Step-by-step guides you can actually follow.</li>
-+        <li>Risks called out clearly, not buried in fine print.</li>
-+        <li>Tools and options, not magic “hacks.”</li>
-+      </ul>
-+    </section>
-+
-+    <section class="section callout">
-+      <h2>Our standard</h2>
-+      <p>
-+        Hard line: <strong>No fake promises.</strong> If a product is risky, we say it’s risky.
-+        If it’s not a fit for your situation, we say that too.
-+      </p>
-+    </section>
-+
-+    <section class="section">
-+      <h2>How Credosity makes money</h2>
-+      <p>
-+        Some links on this site may be affiliate links. That never changes our recommendations.
-+        The content comes first; compensation never buys our voice.
-+      </p>
-+      <p class="muted">
-+        Read the full <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>.
-+      </p>
-+    </section>
-+
-+    <section class="section">
-+      <h2>Who this is for</h2>
-+      <ul class="bullets">
-+        <li>People rebuilding after a denial, setback, or life event.</li>
-+        <li>Folks who want straight answers without shame.</li>
-+        <li>Anyone tired of hype and “instant approval” fairy tales.</li>
-+      </ul>
-+    </section>
-+
-+    <section class="section">
-+      <h2>Where to start</h2>
-+      <p>
-+        If you need a calm map, begin with the foundational steps.
-+      </p>
-+      <div class="center">
-+        <a href="/start-here.html" class="button primary">Go to Start Here</a>
-+      </div>
-+    </section>
-+
-+  </main>
-+
-+  <footer class="footer">
-+    <nav class="footer-links">
-+      <a href="/index.html">Home</a>
-+      <a href="/start-here.html">Start Here</a>
-+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-+      <a href="/privacy.html">Privacy</a>
-+    </nav>
-+    <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
-+  </footer>
-+
-+  <script src="js/main.js"></script>
-+</body>
-+</html>
- 
-EOF
-)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About Credosity | Truth over tactics</title>
+  <meta name="description" content="Why Credosity exists and who it’s built for. Calm, honest credit guidance after life hits." />
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <nav class="topnav">
+    <a href="/" class="brand">Credosity</a>
+    <div class="topnav-links">
+      <a href="/start-here.html">Start Here</a>
+      <a href="/denied-next-3-moves.html">Denied</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+
+  <header class="hero reveal">
+    <p class="kicker">Credosity</p>
+    <p class="microtag">Truth over tactics</p>
+    <h1>About Credosity</h1>
+    <p class="tagline">
+      Built for people rebuilding after life happens.
+      No shame. No hype. No fake promises.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/" class="button">Home</a>
+      <a href="/start-here.html" class="button primary">Start Here</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section section-lede reveal">
+      <h2 class="section-title-standout">Why this exists</h2>
+      <p class="lede">
+        Credit advice is often loud, salesy, or shame-based.
+        Credosity exists to be the opposite: calm, direct guidance for people
+        trying to get back on their feet after a real disruption.
+      </p>
+      <p class="lede">
+        Job loss. Medical bills. Divorce. Housing changes.
+        Life doesn’t ask permission before it hits your finances.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title-standout">What you’ll get here</h2>
+
+      <ul class="bullets">
+        <li>Plain-language explanations of how credit actually works.</li>
+        <li>Step-by-step guidance you can follow without guessing.</li>
+        <li>Clear warnings about risky moves before they cost you time.</li>
+        <li>Recommendations that prioritize stability over speed.</li>
+      </ul>
+    </section>
+
+    <section class="section callout reveal">
+      <h2 class="section-title-standout">What you won’t get</h2>
+
+      <ul class="bullets">
+        <li>No instant fixes or “secret hacks.”</li>
+        <li>No pressure to apply for things you’re not ready for.</li>
+        <li>No moral judgment about how you got here.</li>
+      </ul>
+
+      <p class="muted">
+        If something takes time, we say it takes time.
+        If something can backfire, we say how.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title-standout">The hard line</h2>
+      <p class="lede">
+        Credosity may earn commissions from some links.
+        That never changes what we recommend.
+        If a product is risky or not a fit, we say so.
+      </p>
+      <p class="muted">
+        Read the full <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title-standout">Where to start</h2>
+      <p class="lede">
+        If you’re unsure, start with the calm map.
+        You don’t need to do everything. Just the next right step.
+      </p>
+      <div class="center">
+        <a href="/start-here.html" class="button primary">Start Here</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="/start-here.html">Start Here</a>
+      <a href="/denied-next-3-moves.html">Denied</a>
+      <a href="/about.html">About</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+    <p>© <span id="year"></span> Credosity. Truth over tactics.</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
